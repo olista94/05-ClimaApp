@@ -29,11 +29,12 @@ const main = async () => {
             // Seleccionar la ciudad
             const id = await listarCiudades( ciudades );
             const ciudadSel = ciudades.find( l => l.id === id);
+            if ( id === '0' ) continue;
 
-            
+            // Guardar en DB
+            busquedas.agregarHistoria( ciudadSel.nombre );
 
             // Mostrar resutados
-            
             const latShort = ciudadSel.latitud;
             const lonShort = ciudadSel.longitud;
 
@@ -54,14 +55,14 @@ const main = async () => {
             console.log('Mínima: ', clima.minima.toString() );
             console.log('Máxima: ', clima.maxima.toString() );
             console.log('Tiempo: ', clima.parte );
-            // console.log(clima.parte);
-
-            // Clima
-            //const clima = await busquedas.climaCiudad( lat, lon );
-
-            // case 2: // Hisotrial
-            //     tareas.listadoCompleto();
-            // break;
+            break;
+            
+            case 2: 
+                // busquedas.historial.forEach( ( lugar, i ) => {
+                busquedas.historialCapitalizado.forEach( ( lugar, i ) => {
+                    const idx = `${ i + 1 }.`.green;
+                    console.log(`${ idx } ${ lugar }`);
+                })
   }
         
 
