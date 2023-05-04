@@ -58,6 +58,7 @@ class Busquedas {
         }
     }
     
+    /* 
     function weatherCode ( weathercode ){
 
         return new Promise( function( resolve, reject ){
@@ -155,99 +156,103 @@ class Busquedas {
             resolve(climaStr);
 
         });
-    }    
-        // let climaStr;
+    }  
+    */
+   
+    weatherCode ( weathercode ){
+    
+        let climaStr;
 
-        // switch( weathercode ) {
-        // 
-        //     case 0:
-        //       climaStr = 'Cielo despejado';
-        //       break;
-        //     case 1:
-        //       climaStr = 'Principalmente despejado';
-        //     case 2:
-        //       climaStr = 'Parcialmente nublado';
-        //     case 3:
-        //       climaStr = 'Nublado';
-        //       break;
-        //     case 45:
-        //       climaStr = 'Niebla';
-        //       break;
-        //     case 48:
-        //       climaStr = 'Niebla calcárea depositada';
-        //       break;
-        //     case 51:
-        //       climaStr = 'Llovizna ligera';
-        //       break;
-        //     case 53:
-        //       climaStr = 'Llovizna moderada';
-        //       break;
-        //     case 55:
-        //       climaStr = 'Llovizna densa';
-        //       break;
-        //     case 56:
-        //       climaStr = 'Llovizna helada ligera';
-        //       break;
-        //     case 57:
-        //       climaStr = 'Llovizna helada densa';
-        //       break;
-        //     case 61:
-        //       climaStr = 'Lluvia ligera';
-        //       break;
-        //     case 63:
-        //       climaStr = 'Lluvia moderada';
-        //       break;
-        //     case 65:
-        //       climaStr = 'Lluvia fuerte';
-        //       break;
-        //     case 66:
-        //       climaStr = 'Lluvia helada ligera';
-        //       break;
-        //     case 67:
-        //       climaStr = 'Lluvia helada fuerte';
-        //       break;
-        //     case 71:
-        //       climaStr = 'Caída de nieve ligera';
-        //       break;
-        //     case 73:
-        //       climaStr = 'Caída de nieve moderada';
-        //       break;
-        //     case 75:
-        //       climaStr = 'Caída de nieve fuerte';
-        //       break;
-        //     case 77:
-        //       climaStr = 'Granos de nieve';
-        //       break;
-        //     case 80:
-        //       climaStr = 'Chubascos ligeros'
-        //       break;
-        //     case 81:
-        //       climaStr = 'Chubascos moderados'
-        //       break;
-        //     case 82:
-        //       climaStr = 'Chubascos violentos';
-        //       break;
-        //     case 85:
-        //       climaStr = 'Chubascos de nieve ligeros';
-        //       break;
-        //     case 86:
-        //       climaStr = 'Chubascos de nieve fuertes';
-        //       break;
-        //     case 95:
-        //       climaStr = 'Tormenta eléctrica';
-        //       break;
-        //     case 96:
-        //       climaStr = 'Tormenta con granizo ligero';
-        //       break;
-        //     case 99:
-        //       climaStr = 'Tormenta con granizo fuerte';
-        //       break;
-        //     default:
-        //       climaStr = 'Código no válido';
-        // }
+        switch( weathercode ) {
+        
+            case 0:
+              climaStr = 'Cielo despejado';
+              break;
+            case 1:
+              climaStr = 'Principalmente despejado';
+            case 2:
+              climaStr = 'Parcialmente nublado';
+            case 3:
+              climaStr = 'Nublado';
+              break;
+            case 45:
+              climaStr = 'Niebla';
+              break;
+            case 48:
+              climaStr = 'Niebla calcárea depositada';
+              break;
+            case 51:
+              climaStr = 'Llovizna ligera';
+              break;
+            case 53:
+              climaStr = 'Llovizna moderada';
+              break;
+            case 55:
+              climaStr = 'Llovizna densa';
+              break;
+            case 56:
+              climaStr = 'Llovizna helada ligera';
+              break;
+            case 57:
+              climaStr = 'Llovizna helada densa';
+              break;
+            case 61:
+              climaStr = 'Lluvia ligera';
+              break;
+            case 63:
+              climaStr = 'Lluvia moderada';
+              break;
+            case 65:
+              climaStr = 'Lluvia fuerte';
+              break;
+            case 66:
+              climaStr = 'Lluvia helada ligera';
+              break;
+            case 67:
+              climaStr = 'Lluvia helada fuerte';
+              break;
+            case 71:
+              climaStr = 'Caída de nieve ligera';
+              break;
+            case 73:
+              climaStr = 'Caída de nieve moderada';
+              break;
+            case 75:
+              climaStr = 'Caída de nieve fuerte';
+              break;
+            case 77:
+              climaStr = 'Granos de nieve';
+              break;
+            case 80:
+              climaStr = 'Chubascos ligeros'
+              break;
+            case 81:
+              climaStr = 'Chubascos moderados'
+              break;
+            case 82:
+              climaStr = 'Chubascos violentos';
+              break;
+            case 85:
+              climaStr = 'Chubascos de nieve ligeros';
+              break;
+            case 86:
+              climaStr = 'Chubascos de nieve fuertes';
+              break;
+            case 95:
+              climaStr = 'Tormenta eléctrica';
+              break;
+            case 96:
+              climaStr = 'Tormenta con granizo ligero';
+              break;
+            case 99:
+              climaStr = 'Tormenta con granizo fuerte';
+              break;
+            default:
+              climaStr = 'Código no válido';
+        }
 
-        // return climaStr;
-    // }
+        return climaStr;
+    }
 }
 
 
